@@ -131,6 +131,7 @@ body {
     border: none;
 }
 
+
 /* Popular Tour Related Style */
 
 .popular-tour {
@@ -170,6 +171,7 @@ body {
     border-radius: 16px;
 }
 
+
 /* Choose Your Destination */
 
 .destination {
@@ -183,6 +185,7 @@ body {
     font-size: 40px;
     font-weight: 800;
 }
+
 
 /* Destination Image */
 
@@ -229,6 +232,7 @@ body {
     left: 47%;
     transform: translate(-50%, -50%);
 }
+
 
 /* Why Choose Us */
 
@@ -297,10 +301,72 @@ body {
 .package {
     background-image: url(Images/Group\ 39.png);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
     border-radius: 16px;
-    position: relative;
-    margin-right: 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.package-desc {
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    margin-right: 70px;
+    padding: 50px 60px;
+}
+
+.package1 {
+    background-image: url(Images/Group\ 40.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 16px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.package1 .package-desc {
+    margin-left: 70px;
+}
+
+.package-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.package .description {
+    text-align: left;
+}
+
+.package1 .description {
+    text-align: left;
+}
+
+.package .primary-color {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.package1 .primary-color {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.package .primary-button {
+    padding: 16px 35px;
+}
+
+.package1 .primary-button {
+    padding: 16px 35px;
 }
 
 .place {
@@ -480,4 +546,139 @@ hr {
     color: #131318;
     font-size: 16px;
     font-weight: 300;
+}
+
+
+/* Mobile Device Media Quary */
+
+@media screen and (max-width: 576px) {
+    body {
+        margin: 0 30px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-link div {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header-title {
+        font-size: 40px;
+        padding-top: 35px;
+    }
+
+    .header-description {
+        padding: 0 20px;
+    }
+
+    .header-title,
+    .header-description,
+    .header-input {
+        flex-direction: column;
+    }
+
+    .header-input {
+        flex-direction: column;
+        margin: 0 50px;
+    }
+
+    #Select-Type,
+    #When,
+    #where {
+        justify-content: space-between;
+        width: 90%;
+        height: 50px;
+        margin-bottom: 0;
+    }
+
+    .header-input .primary-button {
+        height: 50px;
+        margin: 0;
+        padding: 17px 142px;
+        margin-bottom: 5px;
+    }
+
+    .popular-tour {
+        flex-direction: column;
+    }
+
+    .tour {
+        padding-right: 0;
+    }
+
+    .popular-tour-pic {
+        margin-top: 20px;
+    }
+
+    .destination {
+        padding: 20px;
+    }
+
+    .destination-title {
+        font-size: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .choose {
+        padding: 20px;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    .hotel,
+    .world-class,
+    .price {
+        width: 450px;
+    }
+    .discount{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .package-desc{
+        justify-content: center;
+        align-items: center;
+        margin: 0 40px;
+    }
+    .package1 .package-desc{
+        margin-left: 40px;
+    }
+    .place{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .place-title{
+        margin-right: 0;
+    }
+    .place-desc{
+        margin: 20px;
+        width: 100%;
+    }
+    .place-img{
+    }
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter-img{
+       margin-right: 150px;
+    }
+    .footer{
+        padding: 20px;
+    }
 }
